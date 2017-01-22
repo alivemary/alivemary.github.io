@@ -1,7 +1,64 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.10.1/bootstrap-social.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container-fluid">
+        <div id="top-header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Portfolio</a>
+                </div><!--Navbar Header-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about"><button type="button" class="btn btn-primary">About</button></a></li>
+                    <li><a href="#portfolio"><button type="button" class="btn btn-default">Portfolio</button></a></li>
+                    <li><a href="#contacts"><button type="button" class="btn btn-default">Contacts</button></a></li>
+                </ul>
+            </nav>
+        </div><!--Top Header-->
+        <div id="content">
+            <section id="about">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>Welcome to my personal page!</p>
+                        <p>I am Marina Martynenko and I work as web developer. I enjoy this job so much. </p>
+                        <p>The technologies involved are always changing, it means you learn lots, it keeps my brain from getting bored. It is enjoyable to see a problem, logically come up with a solution, and put it into practice. There is almost no limit to creativity. </p>
+                        <p>It’s a great satisfaction of going from sketches or mockups to the final product, always trying to do more and more in terms of quality, creativity and functionality.</p>
+                    </div><!--col8-->
+                    <div class="col-md-4">
+                        <img id="portret" class="img-circle" src="https://db.tt/pFZcoX6x" alt="me">
+                    </div><!--col4-->
+                </div><!--row-->
+            </section><!--About-->
+            <section id="portfolio" class="text-center">
+                <h3>Portfolio</h3>
+                <p class="text-center">Here are my projects</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="portfolio-img" src="https://db.tt/RGa2YNkB" alt="my site 1">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="portfolio-img" src="" alt="my site 2">
+                    </div>
+
+                </div><!--row-->
+            </section><!--Portfolio-->
+            <section id="contacts" class="text-center">
+                <h3>Contacts</h3>
+                <p class="text-center">You can contact me</p>
+                <div class="text-center">
+                    <a onclick="" target='_blank' href="https://www.facebook.com/marina.martynenko.7" class="btn btn-social-icon btn-lg btn-facebook"><i class="fa fa-facebook"></i></a>
+                    <a onclick="" target='_blank' href="https://twitter.com/zombi_housewife" class="btn btn-social-icon btn-lg btn-twitter"><i class="fa fa-twitter"></i></a>
+                    <a onclick="" target='_blank' href="https://github.com/alivemary" class="btn btn-social-icon btn-lg btn-github"><i class="fa fa-github"></i></a>
+
+                </div>
+            </section><!--Contacts-->
+        </div><!--Content-->
+    </div> <!--container-->
 </body>
 </html>
