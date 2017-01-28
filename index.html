@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.10.1/bootstrap-social.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <link href="css/simon.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/simonGame.js"></script>
     <script src="js/portfolio.js"></script>
 </head>
 <body>
@@ -86,12 +90,12 @@
                     </div>
                     <hr />
                 </section>
-                
+
                 <section id="projects">
-                    <h3 class="text-center">Projects</h3>
+                    <h2 class="text-center">Projects</h2>
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-4">
-                            <a href="#">
+                            <a href="#simonGame">
                                 <img src="img/simongame.jpg" /></a>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4">
@@ -105,11 +109,55 @@
                             </a>
                         </div>
                     </div>
-                </section><footer>Made by Maryna Martynenko 2017</footer>
+                </section>
+                <div id="simonGame" class="modalDialog">
+                	<div>
+                		<a href="#close" title="Close" class="close">X</a>
+                		<h2>Simon Game</h2>
+                    <section id="gameWin">
+                      <div class="simon">
+                          <div class="row">
+                              <div class="pad red" id="red"></div>
+                              <div class="pad green" id="green"></div>
+                          </div>
+                          <div class="row">
+                              <div class="pad yellow" id="yellow"></div>
+                              <div class="pad blue" id="blue"></div>
+                          </div>
+                          <div class="display" id="display">
+                              <div id="logo"><span id="name">Simon</span><sup> ®</sup></div>
+                              <div class="row">
+                                  <div class="col-xs-12">
+                                      <div id="strictOn"></div>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div id="count" class="col-xs-4"></div>
+                                  <div class="col-xs-4 stB"><button id="start" class="btn"></button></div>
+                                  <div class="col-xs-4 stB"><button id="strict" class="btn"></button></div>
+                              </div>
+                              <div id="labels" class="row">
+                                  <div class="col-xs-4 text-center">COUNT</div>
+                                  <div class="col-xs-4 text-center">START</div>
+                                  <div class="col-xs-4 text-center">STRICT</div>
+                              </div>
+                              <div class="onoffswitch">
+                                  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                                  <label class="onoffswitch-label" for="myonoffswitch">
+                                      <span class="onoffswitch-inner"></span>
+                                      <span class="onoffswitch-switch"></span>
+                                  </label>
+                              </div>
+                            </div>
+                      </div>
+                    </section>
+                	</div>
+                </div>
+                <footer>Made by Maryna Martynenko 2017</footer>
             </div>
         </div>
-        
+
     </div>
-    
+
 </body>
 </html>
