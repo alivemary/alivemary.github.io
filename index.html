@@ -10,12 +10,14 @@
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
     <link href="css/simon.css" rel="stylesheet" />
     <link href="css/tictactoe.css" rel="stylesheet" />
+    <link href="css/ipomodoro.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/simonGame.js"></script>
     <script src="js/ticTacToe.js"></script>
+    <script src="js/iPomodoro.js"></script>
     <script src="js/portfolio.js"></script>
 </head>
 <body>
@@ -106,7 +108,7 @@
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4">
-                            <a href="#">
+                            <a href="#pomodoro">
                                 <img src="img/pomodoro.jpg" />
                             </a>
                         </div>
@@ -152,7 +154,7 @@
                               </div>
                             </div>
                       </div>
-                      <footer>By Maryna Martynenko</footer>
+                      <footer>By Maryna Martynenko<br><a href="https://github.com/alivemary/SimonGame" target='_blank'>Project on GitHub</a></footer>
                     </section>
                 	</div>
                 </div>
@@ -214,9 +216,53 @@
                                     <canvas></canvas>
                                 </button>
                             </div>
-                        <footer>By Maryna Martynenko</footer>
+                        <footer>By Maryna Martynenko<br><a href="https://github.com/alivemary/TicTacToe" target='_blank'>Project on GitHub</a></footer>
                     </div>
                   </div>
+                </div>
+                <div id="pomodoro" class="modalDialog">
+                  <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>iPomodoro Clock</h2>
+                    <div id="mainWin2" class="hidden container-fluid">
+                      <div class="row">
+                          <div id="leftControl" class="col-sm-6 col-xs-6 text-right">
+                              <p>Break (min)</p>
+                              <button class="btn pombtn" value="b-">-</button>
+                              <span id="breakTime">5</span>
+                              <button class="btn pombtn" value="b+">+</button>
+
+                            </div>
+                            <div id="rightControl" class="col-sm-6 col-xs-6 text-left">
+                                <p>Session (min)</p>
+                                <button class="btn pombtn" value="l-">-</button>
+                                <span id="longTime">25</span>
+                                <button class="btn pombtn" value="l+">+</button>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12 text-center">
+                                <button id="timerView" value="pauseS"><span id="timeLeft">25:00</span><br /><span id="timerStatus">Click!</span></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12 text-center">
+                                <button class="btn pombtn" id="resetButton" value="reset">Reset</button>
+                            </div>
+                        </div>
+                  </div>
+                  <footer>By Maryna Martynenko<br><a href="https://github.com/alivemary/iPomodoro" target='_blank'>Project on GitHub</a></footer>
+                </div>
+                <div id="nextProject" class="modalDialog">
+                  <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Project Name</h2>
+
+                    //Put Code There
+
+                  </div>
+                  <footer>By Maryna Martynenko<br><a href="https://github.com/alivemary/iPomodoro" target='_blank'>Project on GitHub</a></footer>
                 </div>
                 <footer>Made by Maryna Martynenko 2017</footer>
             </div>

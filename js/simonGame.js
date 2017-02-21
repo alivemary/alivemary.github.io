@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    var MAX = 3; //max sequence length
+    var MAX = 10; //max sequence length
     var sequence = [];
     var curSequence = [];
     var colors = ['red', 'green', 'yellow', 'blue'];
