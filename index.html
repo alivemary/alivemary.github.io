@@ -9,11 +9,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.10.1/bootstrap-social.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
     <link href="css/simon.css" rel="stylesheet" />
+    <link href="css/tictactoe.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/simonGame.js"></script>
+    <script src="js/ticTacToe.js"></script>
     <script src="js/portfolio.js"></script>
 </head>
 <body>
@@ -150,6 +152,7 @@
                               </div>
                             </div>
                       </div>
+                      <footer>By Maryna Martynenko</footer>
                     </section>
                 	</div>
                 </div>
@@ -157,6 +160,62 @@
                 	<div>
                 		<a href="#close" title="Close" class="close">X</a>
                 		<h2>Tic Tac Toe</h2>
+                    <div id="mainWin1" class="container-fluid hidden">
+                      <div id='play'>
+                      <header>
+                          <h3></h3>
+                          <button type="button" class="btn ticbtn hidden" value="o" id="again">
+                            Play again!
+                          </button>
+                      </header>
+                      <div class="row btn-group">
+                          <button type="button" class="btn btn-secondary  ticbtn" id="field1">
+                              <canvas></canvas>
+                          </button>
+                          <button type="button" class="btn btn-secondary  ticbtn" id="field2">
+                              <canvas></canvas>
+                          </button>
+                          <button type="button" class="btn btn-secondary  ticbtn" id="field3">
+                              <canvas></canvas>
+                          </button>
+                      </div><br />
+                      <div class="row btn-group">
+                          <button type="button" class="btn btn-secondary ticbtn" id="field4">
+                              <canvas></canvas>
+                          </button>
+                          <button type="button" class="btn btn-secondary ticbtn" id="field5">
+                              <canvas></canvas>
+                          </button>
+                          <button type="button" class="btn btn-secondary ticbtn" id="field6">
+                              <canvas></canvas>
+                          </button>
+                      </div><br />
+                      <div class="row btn-group">
+                          <button type="button" class="btn btn-secondary ticbtn" id="field7">
+                              <canvas></canvas>
+                          </button>
+                          <button type="button" class="btn btn-secondary ticbtn" id="field8">
+                              <canvas></canvas>
+                          </button>
+                          <button type="button" class="btn btn-secondary ticbtn" id="field9">
+                              <canvas></canvas>
+                          </button>
+                      </div><br />
+                      <footer>By Maryna Martynenko</footer>
+                    </div>
+                    </div>
+                    <div id="startWin1" class="container-fluid hidden">
+                            <div id="choose">
+                                <h3>Would you like play X or O?</h3>
+                                <button type="button" class="btn btn-default ticbtn" value="x" id="field10">
+                                    <canvas></canvas>
+                                </button>
+                                <button type="button" class="btn btn-default ticbtn" value="o" id="field11">
+                                    <canvas></canvas>
+                                </button>
+                            </div>
+                        <footer>By Maryna Martynenko</footer>
+                    </div>
                   </div>
                 </div>
                 <footer>Made by Maryna Martynenko 2017</footer>
