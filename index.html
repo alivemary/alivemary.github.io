@@ -1,10 +1,12 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <title>Maryna Martynenko Personal Page</title>
     <meta charset="utf-8" />
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.10.1/bootstrap-social.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
@@ -14,12 +16,14 @@
     <link href="css/style.css" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <script src="js/simonGame.js"></script>
     <script src="js/ticTacToe.js"></script>
     <script src="js/iPomodoro.js"></script>
     <script src="js/portfolio.js"></script>
 </head>
+
 <body>
     <header></header>
 
@@ -27,7 +31,8 @@
         <div class="row">
             <div class="col-sm-3 col-md-3 col-lg-3">
                 <div class="bootstrap-vertical-nav">
-                    <button id="menuButton" class="btn btn-primary hidden-md-up" type="button" data-toggle="collapse" data-target="#collapse" aria-expanded="false" aria-controls="collapse">
+                    <button id="menuButton" class="btn btn-primary hidden-md-up" type="button" data-toggle="collapse" data-target="#collapse"
+                        aria-expanded="false" aria-controls="collapse">
                         <span class="bar"><i class="fa fa-bars" aria-hidden="true"></i></span>
                     </button>
 
@@ -68,7 +73,7 @@
                                         <p class="text-center">Web developer</p>
                                         <p class="text-center">Technologies</p>
                                         <ul>
-                                            <li>ReactJS, Webpack2</li>
+                                            <li>ReactJS, Redux, Jest, Webpack2</li>
                                             <li>HTML5, CSS3, Bootstrap</li>
                                             <li>JavaScript, jQuery</li>
                                             <li>PHP, MYSQL</li>
@@ -103,6 +108,11 @@
                 <section id="react">
                     <h2 class="text-center">React Projects</h2>
                     <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <a target="_blank" href="./dungeon-game">
+                                <img src="img/dungeongame.jpg" />
+                            </a>
+                        </div>
                         <div class="col-xs-12 col-sm-6 col-md-4">
                             <a target="_blank" href="./GameOfLife">
                                 <img src="img/gameoflife.jpg" />
@@ -145,101 +155,101 @@
                         </div>
                     </div>
                 </section>
-                
+
 
                 <div id="simonGame" class="modalDialog">
-                	<div>
-                		<a href="#close" title="Close" class="close">X</a>
-                		<h2>Simon Game</h2>
-                    <section id="gameWin">
-                      <div class="simon">
-                          <div class="row">
-                              <div class="pad red" id="red"></div>
-                              <div class="pad green" id="green"></div>
-                          </div>
-                          <div class="row">
-                              <div class="pad yellow" id="yellow"></div>
-                              <div class="pad blue" id="blue"></div>
-                          </div>
-                          <div class="display" id="display">
-                              <div id="logo"><span id="name">Simon</span><sup> ®</sup></div>
-                              <div class="row">
-                                  <div class="col-xs-12">
-                                      <div id="strictOn"></div>
-                                  </div>
-                              </div>
-                              <div class="row">
-                                  <div id="count" class="col-xs-4"></div>
-                                  <div class="col-xs-4 stB"><button id="start" class="btn"></button></div>
-                                  <div class="col-xs-4 stB"><button id="strict" class="btn"></button></div>
-                              </div>
-                              <div id="labels" class="row">
-                                  <div class="col-xs-4 text-center">COUNT</div>
-                                  <div class="col-xs-4 text-center">START</div>
-                                  <div class="col-xs-4 text-center">STRICT</div>
-                              </div>
-                              <div class="onoffswitch">
-                                  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
-                                  <label class="onoffswitch-label" for="myonoffswitch">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h2>Simon Game</h2>
+                        <section id="gameWin">
+                            <div class="simon">
+                                <div class="row">
+                                    <div class="pad red" id="red"></div>
+                                    <div class="pad green" id="green"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="pad yellow" id="yellow"></div>
+                                    <div class="pad blue" id="blue"></div>
+                                </div>
+                                <div class="display" id="display">
+                                    <div id="logo"><span id="name">Simon</span><sup> ®</sup></div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div id="strictOn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="count" class="col-xs-4"></div>
+                                        <div class="col-xs-4 stB"><button id="start" class="btn"></button></div>
+                                        <div class="col-xs-4 stB"><button id="strict" class="btn"></button></div>
+                                    </div>
+                                    <div id="labels" class="row">
+                                        <div class="col-xs-4 text-center">COUNT</div>
+                                        <div class="col-xs-4 text-center">START</div>
+                                        <div class="col-xs-4 text-center">STRICT</div>
+                                    </div>
+                                    <div class="onoffswitch">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                                        <label class="onoffswitch-label" for="myonoffswitch">
                                       <span class="onoffswitch-inner"></span>
                                       <span class="onoffswitch-switch"></span>
                                   </label>
-                              </div>
+                                    </div>
+                                </div>
                             </div>
-                      </div>
-                      <footer>By Maryna Martynenko<br><a href="https://github.com/alivemary/SimonGame" target='_blank'>Project on GitHub</a></footer>
-                    </section>
-                	</div>
+                            <footer>By Maryna Martynenko<br><a href="https://github.com/alivemary/SimonGame" target='_blank'>Project on GitHub</a></footer>
+                        </section>
+                    </div>
                 </div>
                 <div id="ticTacToe" class="modalDialog">
-                	<div>
-                		<a href="#close" title="Close" class="close">X</a>
-                		<h2>Tic Tac Toe</h2>
-                    <div id="mainWin1" class="container-fluid hidden">
-                      <div id='play'>
-                      <header>
-                          <h3></h3>
-                          <button type="button" class="btn ticbtn hidden" value="o" id="again">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h2>Tic Tac Toe</h2>
+                        <div id="mainWin1" class="container-fluid hidden">
+                            <div id='play'>
+                                <header>
+                                    <h3></h3>
+                                    <button type="button" class="btn ticbtn hidden" value="o" id="again">
                             Play again!
                           </button>
-                      </header>
-                      <div class="row btn-group">
-                          <button type="button" class="btn btn-secondary  ticbtn" id="field1">
+                                </header>
+                                <div class="row btn-group">
+                                    <button type="button" class="btn btn-secondary  ticbtn" id="field1">
                               <canvas></canvas>
                           </button>
-                          <button type="button" class="btn btn-secondary  ticbtn" id="field2">
+                                    <button type="button" class="btn btn-secondary  ticbtn" id="field2">
                               <canvas></canvas>
                           </button>
-                          <button type="button" class="btn btn-secondary  ticbtn" id="field3">
+                                    <button type="button" class="btn btn-secondary  ticbtn" id="field3">
                               <canvas></canvas>
                           </button>
-                      </div><br />
-                      <div class="row btn-group">
-                          <button type="button" class="btn btn-secondary ticbtn" id="field4">
+                                </div><br />
+                                <div class="row btn-group">
+                                    <button type="button" class="btn btn-secondary ticbtn" id="field4">
                               <canvas></canvas>
                           </button>
-                          <button type="button" class="btn btn-secondary ticbtn" id="field5">
+                                    <button type="button" class="btn btn-secondary ticbtn" id="field5">
                               <canvas></canvas>
                           </button>
-                          <button type="button" class="btn btn-secondary ticbtn" id="field6">
+                                    <button type="button" class="btn btn-secondary ticbtn" id="field6">
                               <canvas></canvas>
                           </button>
-                      </div><br />
-                      <div class="row btn-group">
-                          <button type="button" class="btn btn-secondary ticbtn" id="field7">
+                                </div><br />
+                                <div class="row btn-group">
+                                    <button type="button" class="btn btn-secondary ticbtn" id="field7">
                               <canvas></canvas>
                           </button>
-                          <button type="button" class="btn btn-secondary ticbtn" id="field8">
+                                    <button type="button" class="btn btn-secondary ticbtn" id="field8">
                               <canvas></canvas>
                           </button>
-                          <button type="button" class="btn btn-secondary ticbtn" id="field9">
+                                    <button type="button" class="btn btn-secondary ticbtn" id="field9">
                               <canvas></canvas>
                           </button>
-                      </div><br />
-                      <footer>By Maryna Martynenko</footer>
-                    </div>
-                    </div>
-                    <div id="startWin1" class="container-fluid hidden">
+                                </div><br />
+                                <footer>By Maryna Martynenko</footer>
+                            </div>
+                        </div>
+                        <div id="startWin1" class="container-fluid hidden">
                             <div id="choose">
                                 <h3>Would you like play X or O?</h3>
                                 <button type="button" class="btn btn-default ticbtn" value="x" id="field10">
@@ -249,59 +259,60 @@
                                     <canvas></canvas>
                                 </button>
                             </div>
-                        <footer>By Maryna Martynenko<br><a href="https://github.com/alivemary/TicTacToe" target='_blank'>Project on GitHub</a></footer>
+                            <footer>By Maryna Martynenko<br><a href="https://github.com/alivemary/TicTacToe" target='_blank'>Project on GitHub</a></footer>
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <div id="pomodoro" class="modalDialog">
-                  <div>
-                    <a href="#close" title="Close" class="close">X</a>
-                    <h2>iPomodoro Clock</h2>
-                    <div id="mainWin2" class="hidden container-fluid">
-                      <div class="row">
-                          <div id="leftControl" class="col-sm-6 col-xs-6 text-right">
-                              <p>Break (min)</p>
-                              <button class="btn pombtn" value="b-">-</button>
-                              <span id="breakTime">5</span>
-                              <button class="btn pombtn" value="b+">+</button>
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h2>iPomodoro Clock</h2>
+                        <div id="mainWin2" class="hidden container-fluid">
+                            <div class="row">
+                                <div id="leftControl" class="col-sm-6 col-xs-6 text-right">
+                                    <p>Break (min)</p>
+                                    <button class="btn pombtn" value="b-">-</button>
+                                    <span id="breakTime">5</span>
+                                    <button class="btn pombtn" value="b+">+</button>
 
-                            </div>
-                            <div id="rightControl" class="col-sm-6 col-xs-6 text-left">
-                                <p>Session (min)</p>
-                                <button class="btn pombtn" value="l-">-</button>
-                                <span id="longTime">25</span>
-                                <button class="btn pombtn" value="l+">+</button>
+                                </div>
+                                <div id="rightControl" class="col-sm-6 col-xs-6 text-left">
+                                    <p>Session (min)</p>
+                                    <button class="btn pombtn" value="l-">-</button>
+                                    <span id="longTime">25</span>
+                                    <button class="btn pombtn" value="l+">+</button>
 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-xs-12 text-center">
+                                    <button id="timerView" value="pauseS"><span id="timeLeft">25:00</span><br /><span id="timerStatus">Click!</span></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-xs-12 text-center">
+                                    <button class="btn pombtn" id="resetButton" value="reset">Reset</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-12 col-xs-12 text-center">
-                                <button id="timerView" value="pauseS"><span id="timeLeft">25:00</span><br /><span id="timerStatus">Click!</span></button>
-                            </div>
+                        <footer>By Maryna Martynenko<br><a href="https://github.com/alivemary/iPomodoro" target='_blank'>Project on GitHub</a></footer>
+                    </div>
+                    <div id="nextProject" class="modalDialog">
+                        <div>
+                            <a href="#close" title="Close" class="close">X</a>
+                            <h2>Project Name</h2>
+
+                            //Put Code There
+
                         </div>
-                        <div class="row">
-                            <div class="col-sm-12 col-xs-12 text-center">
-                                <button class="btn pombtn" id="resetButton" value="reset">Reset</button>
-                            </div>
-                        </div>
-                  </div>
-                  <footer>By Maryna Martynenko<br><a href="https://github.com/alivemary/iPomodoro" target='_blank'>Project on GitHub</a></footer>
+                        <footer>By Maryna Martynenko<br><a href="https://github.com/alivemary/iPomodoro" target='_blank'>Project on GitHub</a></footer>
+                    </div>
+                    <footer>Made by Maryna Martynenko 2017</footer>
                 </div>
-                <div id="nextProject" class="modalDialog">
-                  <div>
-                    <a href="#close" title="Close" class="close">X</a>
-                    <h2>Project Name</h2>
-
-                    //Put Code There
-
-                  </div>
-                  <footer>By Maryna Martynenko<br><a href="https://github.com/alivemary/iPomodoro" target='_blank'>Project on GitHub</a></footer>
-                </div>
-                <footer>Made by Maryna Martynenko 2017</footer>
             </div>
+
         </div>
 
-    </div>
-
 </body>
+
 </html>
