@@ -29,6 +29,15 @@ a img {
 h3 {
     margin-bottom: 20px;
 }
+#webshop h3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+#webshop a img {
+	width: 33%;
+	border: 1px solid darkgrey;
+}
 #menuButton {
     width: 100%;
     background-color: white;
